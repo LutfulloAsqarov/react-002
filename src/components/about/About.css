@@ -1,0 +1,33 @@
+.about {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+.about__left {
+    width: 50%;
+}
+.about__left img {
+    width: 100%;
+}
+.about__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+    }
+    .about__left {
+        width: 100%;
+    }
+    .about__right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

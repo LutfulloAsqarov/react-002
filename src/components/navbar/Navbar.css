@@ -1,0 +1,42 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header__left {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+.header__link {
+    color: #150c01;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.header__link:hover {
+    color: #dc780b;
+}
+.header__link:focus {
+    color: #dc780b;
+}
+@media (max-width: 870px) {
+    .header__list {
+        display: none;
+    }
+}
